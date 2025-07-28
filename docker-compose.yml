@@ -25,11 +25,11 @@ x-common: &common
 services:
   endframe:
     <<: *common
-    command: ["endframe_ichi.py", "--server", "0.0.0.0", "--port", "7860","--lang", "ja"]
+    command: ["python endframe_ichi.py", "--server", "0.0.0.0", "--port", "7860","--lang", "ja"]
 
   oneframe:
     <<: *common
-    command: ["oneframe_ichi.py", "--server", "0.0.0.0", "--port", "7860","--lang", "ja"]
+    command: ["python oneframe_ichi.py", "--server", "0.0.0.0", "--port", "7860","--lang", "ja"]
   oneframe_f1:
     <<: *common
-    command: ["oneframe_ichi_f1.py", "--server", "0.0.0.0", "--port", "7860","--lang", "ja"]
+    command: ["python oneframe_ichi_f1.py", "--server", "0.0.0.0", "--port", "7860","--lang", "ja"]
