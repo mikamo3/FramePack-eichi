@@ -65,8 +65,8 @@ RUN git clone https://github.com/git-ai-code/FramePack-eichi /tmp/framepack-eich
 RUN cp -rf /tmp/framepack-eichi/webui/* /app/framepack/
 
 RUN useradd -m -u 1000 appuser
-USER appuser
 RUN chown -R appuser:appuser /app/framepack
+USER appuser
 # Set working directory for when container starts
 WORKDIR /app/framepack
 
