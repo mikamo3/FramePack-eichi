@@ -68,7 +68,7 @@ RUN cp -rf /tmp/framepack-eichi/webui/* /app/framepack/
 WORKDIR /app/framepack
 
 # Command to run when container starts
-ENTRYPOINT ["bash"]
+ENTRYPOINT ["python"]
 
 # Default arguments (can be overridden)
 CMD ["endframe_ichi.py", "--server", "0.0.0.0", "--port", "7860"]
